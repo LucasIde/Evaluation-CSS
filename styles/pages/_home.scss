@@ -1,0 +1,198 @@
+.trial {
+    position: relative;
+    padding: 50px 10px;
+    text-align: center;
+    &__prev {
+        color: #0744AF;
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__title {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+    p {
+        font-size: 1.8rem;
+        color: #555;
+        a{
+            color: #0744AF;
+            text-decoration: #0744AF;
+        }
+    }
+    .citation {
+        padding: 2.5rem;
+        p {
+            color: #0744AF;
+            font-size: 2.4rem;
+        }
+        span {
+            color: #0744AF;
+            font-size: 1.8rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+        margin-bottom: 2rem;
+    }
+}
+
+// background image under header
+.trial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./../img/shutterstock_2413843309.jpg);
+    opacity: 50%;
+    z-index: -1;
+}
+
+.presentation {
+    background-color: #0744AF;
+    padding: 6rem 1rem;
+    &__image {
+        position: relative;
+        margin-bottom: 1rem;
+        // rounded image
+        img {
+            width: 240px;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 100%;
+            border: solid 1rem #3969bf;
+        }
+        // name
+        span {
+            position: absolute;
+            bottom: 1rem;
+            font-size: 1.4rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(0, 101, 149, 1) 100%);;
+        }
+    }
+    &__content {
+        color: #fff;
+        text-align: center;
+    }
+    &__prev, p {
+        font-size: 1.8rem;
+    }
+    &__title {
+        margin-top: 0;
+        font-size: 2.4rem;
+    }
+    a {
+        display: inline-block;
+        margin: .6rem 0 1.5rem;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 4px;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+}
+
+.services {
+    padding: 0 1rem;
+}
+
+.servicesTxt {
+    position: relative;
+    text-align: center;
+    padding: 5rem 0;
+    &__prev {
+        font-size: 1.7rem;
+        color: #0744AF;
+    }
+    &__title {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+    p {
+        font-size: 1.8rem;
+        color: #555555;
+    }
+}
+.servicesTxt::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./../img/bg-logo-faded-mark-400x400.png);
+    background-position: center;
+}
+
+.cardServices {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.cardService {
+    padding: 2rem;
+    background-color: #F3F5F9;
+    box-shadow: 0 0 1em #0002;
+    transition: .3s all ease-in-out;
+    &__title {
+        font-size: 2.4rem;
+        margin: 1rem 0;
+        font-weight: normal;
+    }
+    p{
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+    .hoverbar {
+        width: 20%;
+        height: 4px;
+        background-color: #80808050;
+        margin: 1rem 0;
+        transition: .3s all ease-in-out;
+    }
+    &__more {
+        color: #0744AF;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        i {
+            margin-right: .6rem;
+        }
+    }
+}
+
+.cardService__black {
+    background-color: #000;
+    color: #fff;
+    a{
+        color: #fff;
+    }
+}
+
+.cardService:hover{
+    margin: -1rem 0 1rem;
+    .hoverbar {
+        width: 100%;
+        background-color: #0744AF;
+    }
+    .blue-hover {
+        color: #0744AF;
+    }
+}
+.cardService__more:not(.no-hover):hover {
+    color: #000;
+    i{
+        color: #0744AF;
+    }
+}

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -36,15 +36,20 @@
                 <h1 class="headerContent__title">Hustle Never Sleeps.</h1>
                 <p>Houston's relentless pace demands a legal team that never quits. We are around-the-clock advocates, providing unwavering support when you need it most.</p>
                 <div class="headerContent__buttons">
-                    <a href="./contact.html" class="buttons__blue">Contact hicks thomas <i class="fa-solid fa-play"></i></a>
-                    <a href="" class="buttons__black">more <i class="fa-regular fa-circle-down"></i></a>
+                    <a href="./contact.html" class="headerContent__buttons--blue">Contact hicks thomas <i class="fa-solid fa-play"></i></a>
+                    <a href="" class="headerContent__buttons--black">more <i class="fa-regular fa-circle-down"></i></a>
                 </div>
             </section>
         </div>
+        <div class="callBanner">
+            <i class="fa-solid fa-phone-volume"></i>
+            <a href=""> Call: 713-547-9100</a>
+        </div>
+        <i class="fa-solid fa-universal-access accessmenu"></i>
     </header>
     <main>
-        <div class="wrapper">
-            <section class="trial">
+        <section class="trial">
+                <div class="wrapper">
                 <div class="trial__content">
                     <span class="trial__prev">From the Board Room to the Courtroom <i class="fa-solid fa-arrow-right"></i></span>
                     <h2 class="trial__title">Texas Trial Lawyers</h2>
@@ -55,11 +60,14 @@
                     <p><i class="fa-solid fa-quote-left"></i> Hicks Thomas LLP is an accomplished team of commercial litigators with a wealth of trial experience. <i class="fa-solid fa-quote-right"></i></p>
                     <span>Chambers USA</span>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <div class="wrapper">
             <section class="presentation">
-                <img src="./img/john-Deis-380x380-1.jpg" alt="">
+                <div class="presentation__image">
+                    <img src="./img/john-Deis-380x380-1.jpg" alt="">
+                    <span>John Deis</span>
+                </div>
                 <div class="presentation__content">
                     <span class="presentation__prev">A Unique Perspective <i class="fa-solid fa-arrow-right"></i></span>
                     <h2 class="presentation__title">Houston's Top Litigation Attorneys</h2>
@@ -69,17 +77,86 @@
             </section>
         </div>
         <div class="wrapper">
-            <section class="articles">
-                <div class="articles__content">
-                    <span class="articles__prev">Our Work <i class="fa-solid fa-arrow-right"></i></span>
-                    <h2 class="articles__title">A Legacy of Winning</h2>
+            <section class="services">
+                <div class="servicesTxt">
+                    <span class="servicesTxt__prev">Our Work <i class="fa-solid fa-arrow-right"></i></span>
+                    <h2 class="servicesTxt__title">A Legacy of Winning</h2>
                     <p>Hicks Thomas LLP is a litigation boutique with extensive expertise across a wide range of industries. We represent both plaintiffs and defendants in business and tort litigation. Our experience includes energy, environmental and toxic torts, antitrust and anti-competitive practices, employment and labor disputes, as well as product liability cases. Since our founding in 1997, we have consistently delivered successful results in complex cases, building a reputation for excellence, efficiency, and outstanding client service.</p>
                 </div>
-                <article class="cardServices">
-                    <h3 class="cardServices__title">Appellate Litigation</h3>
-                    <p>Hicks Thomas LLP specializes in appellate litigation, adeptly handling appeals of trial court rulings. Our skilled lawyers anticipate, prepare for, and successfully argue appeals, ensuring favorable outcomes in higher courts.</p>
-                    <span class="cardServices__more"><i class="fa-solid fa-play"></i> learn more</span>
-                </article>
+                <div class="cardServices">
+                    <article class="cardService">
+                        <h3 class="cardService__title">Appellate Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas LLP specializes in appellate litigation, adeptly handling appeals of trial court rulings. Our skilled lawyers anticipate, prepare for, and successfully argue appeals, ensuring favorable outcomes in higher courts.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Business Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas LLP excels in litigating complex business disputes, devising strategic solutions tailored to your business needs, ensuring the best possible outcomes.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Construction Litigation</h3>
+                        <p class="blue-hover">We efficiently resolve construction disputes at all stages, minimizing disruption and expense. Through negotiation, litigation, or arbitration, we protect clients' investments and relationships in the construction industry.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Energy Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas LLP's energy trial lawyers handle complex legal disputes in the high-risk oil and gas sector. With extensive court and arbitration experience, we protect your interests, minimize risk, and maximize returns.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Environmental & Natural Resources Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas handles environmental claims, navigating regulations and defending businesses in air, water, soil, and groundwater litigation, backed by a proven track record of success in complex environmental cases.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Health Care Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas LLP excels in managed care litigation, representing organizations in high-stakes disputes involving ERISA, reimbursement claims, and provider networks, delivering strategic counsel and precedent-setting victories nationwide.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Insurance Coverage Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas LLP’s insurance group represents insurers and reinsurers in complex coverage disputes, offering expertise in liabilities, property, and health policies, and delivering efficient, cost-effective resolutions through litigation or alternative dispute mechanisms.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Intellectual Property & Trade Secret Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas protects trade secrets, handling disputes in state and federal courts under laws like the Texas Uniform Trade Secrets Act and the Defend Trade Secrets Act, safeguarding your valuable information assets.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Labor & Employment Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas defends employment lawsuits, counsels on workplace laws, and represents clients before agencies like the NLRB, EEOC, and OSHA, offering decades of experience in employment law litigation.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Plaintiff's Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas LLP leverages over 25 years of trial experience to represent plaintiffs in high-stakes disputes, offering flexible fee arrangements and delivering proven results in personal injury, business, and intellectual property cases.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService">
+                        <h3 class="cardService__title">Real Estate Litigation</h3>
+                        <p class="blue-hover">Hicks Thomas excels in real estate litigation, offering pre-litigation evaluation and strategy to protect clients' rights through negotiation, litigation, or arbitration, leveraging deep expertise in commercial real estate disputes.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                    <article class="cardService cardService__black">
+                        <h3 class="cardService__title">Get Started Here</h3>
+                        <p>Reach out to Hicks Thomas LLP for trusted legal support. Our experienced attorneys are here to safeguard your business and deliver solid results.</p>
+                        <div class="hoverbar"></div>
+                        <a href="" class="cardService__more no-hover"><i class="fa-solid fa-play"></i>learn more</a>
+                    </article>
+                </div>
                 <!-- card +11  last one with class card__black-->
             </section>
         </div>
