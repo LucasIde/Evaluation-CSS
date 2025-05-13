@@ -89,6 +89,9 @@ nav {
 // modif navbar for other index
 
 .headerOther{
+    nav {
+        box-shadow: 0px 2px 5px -5px #000;
+    }
     .menu__element a{
         color: #000;
     }
@@ -125,6 +128,10 @@ nav {
             border-radius: 4px;
             font-size: 1.4rem;
             text-transform: uppercase;
+            transition: .3s all ease-in-out;
+        }
+        & > *:hover{
+            opacity: 80%;
         }
         &--blue {
             background-color: #0744af;

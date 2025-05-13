@@ -15,7 +15,7 @@
         <nav>
             <img src="./img/hicks-thomas-logo-new-blue-mark.png" alt="">
             <ul class="menu">
-                <li class="menu__element"><a href="">Home</a></li>
+                <li class="menu__element"><a href="./index.html">Home</a></li>
                 <li class="menu__element"><a href="./attorneys.html">Attorneys</a></li>
                 <li class="menu__element"><a href="">Practice</a></li>
                 <li class="menu__element"><a href="">Areas</a></li>
@@ -39,41 +39,81 @@
         <i class="fa-solid fa-universal-access accessmenu"></i>
     </header>
     <main>
+        <!-- form part -->
         <section class="contact">
-            <form action="">
+            <div class="wrapper">
                 <h2 class="contact__title">Contact Hicks Thomas LLP</h2>
                 <h3 class="contact__subtitle">- Learn About Our Innovative Legal Solutions -</h3>
-                <div class="contact__name">
+                <form action="">
                     <input type="text" name="" id="" placeholder="First name">
                     <input type="text" name="" id="" placeholder="Last name">
-                </div>
-                <div class="contact__mail">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <input type="tel" name="" id="" placeholder="Phone">
-                </div>
-                <select name="" id="">
-                    <option value="">Are you a new client?</option>
-                    <option value="dog">Yes, I am a potential new client.</option>
-                    <option value="cat">No, I'm an existing client.</option>
-                    <option value="hamster">I'm neither.</option>
-                </select>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="email" name="" id="" placeholder="Email" class="bigForm">
+                    <input type="tel" name="" id="" placeholder="Phone" class="bigForm">
+                    <select name="" id="" class="bigForm">
+                        <option value="">Are you a new client?</option>
+                        <option value="Yes">Yes, I am a potential new client.</option>
+                        <option value="No">No, I'm an existing client.</option>
+                        <option value="neither">I'm neither.</option>
+                    </select>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="bigForm"></textarea>
+                </form>
                 <p><b>Your privacy matters:</b> We encourage you to contact us through this form. While reaching out does not create an attorney-client relationship, we value your privacy and will protect your information. Please avoid sharing confidential details until a formal relationship is established.</p>
                 <button>submit Form</button>
-            </form>
+            </div>
         </section>
+        <!-- map part -->
         <div class="maps">
-            <section class="mapCard">
-                <h2 class="mapCard__title">Houston Office</h2>
-                <p>700 Louisiana St. <br> Suite 2300 <br> Houston, TX 77002</p>
-                <div class="mapCard__contact">
-                    <a href=""><i class="fa-solid fa-phone-volume"></i> 713-547-9100</a>
-                    <span><i class="fa-solid fa-tty"></i>713-547-9150</span>
-                    <a href=""><i class="fa-solid fa-map"></i>Directions</a>
-                </div>
-                <iframe src="" frameborder="0"></iframe>
-            </section>
-            <!-- map +4 -->
+            <div class="wrapper">
+                <section class="mapCard">
+                    <h2 class="mapCard__title">Houston Office</h2>
+                    <p>700 Louisiana St. <br> Suite 2300 <br> Houston, TX 77002</p>
+                    <div class="mapCard__contact">
+                        <a href=""><i class="fa-solid fa-phone-volume"></i> 713-547-9100</a>
+                        <span><i class="fa-solid fa-tty"></i>713-547-9150</span>
+                        <a href=""><i class="fa-solid fa-map"></i>Directions</a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13854.360814528694!2d-95.366231!3d29.760571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf3a12c372f9%3A0x8e4c40aedec5c78a!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747141784790!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section class="mapCard">
+                    <h2 class="mapCard__title">Austin Office</h2>
+                    <p>111 Congress Ave.<br> Suite 1010<br> Austin, TX 78701</p>
+                    <div class="mapCard__contact">
+                        <a href=""><i class="fa-solid fa-phone-volume"></i>512-827-7990</a>
+                        <span><i class="fa-solid fa-tty"></i>409-419-1733</span>
+                        <a href=""><i class="fa-solid fa-map"></i>Directions</a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13784.286129820948!2d-97.743539!3d30.263542999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b507c51dfe63%3A0xdea1a48f4071f6b1!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747142342668!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section class="mapCard">
+                    <h2 class="mapCard__title">Amarillo Office</h2>
+                    <p>619 S. Tyler St.<br> Suite 80B<br> Amarillo, TX 79101</p>
+                    <div class="mapCard__contact">
+                        <a href=""><i class="fa-solid fa-phone-volume"></i>806-310-9990</a>
+                        <span><i class="fa-solid fa-tty"></i>713-547-9150</span>
+                        <a href=""><i class="fa-solid fa-map"></i>Directions</a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13854.356113628955!2d-95.366343!3d29.760605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87014efea91c93d7%3A0xfd139726a581a69c!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747142369620!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section class="mapCard bigCard-1">
+                    <h2 class="mapCard__title">Beaumont Office</h2>
+                    <p>2615 Calder Ave.<br> Suite 720<br> Beaumont, TX 77702</p>
+                    <div class="mapCard__contact">
+                        <a href=""><i class="fa-solid fa-phone-volume"></i>409-241-7252</a>
+                        <span><i class="fa-solid fa-tty"></i>409-419-1733</span>
+                        <a href=""><i class="fa-solid fa-map"></i>Directions</a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13809.238870260288!2d-94.127703!3d30.085315000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863ecacfd5d46ac5%3A0xff86fffa2168854c!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747142382142!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section class="mapCard bigCard-2">
+                    <h2 class="mapCard__title">Sacramento Office</h2>
+                    <p>701 University Ave.<br> Suite 106<br> Sacramento, CA 95825</p>
+                    <div class="mapCard__contact">
+                        <a href=""><i class="fa-solid fa-phone-volume"></i>916-447-4900</a>
+                        <a href=""><i class="fa-solid fa-map"></i>Directions</a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12478.2999445318!2d-121.41991!3d38.566605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809adadcc51b2dd3%3A0x1ec7c2cddf745e65!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747142393613!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
         </div>
     </main>
     <footer>
